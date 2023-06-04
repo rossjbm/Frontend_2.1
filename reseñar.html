@@ -23,30 +23,30 @@
         </nav>
     </header>
     <main>
-        <form action="post">
+        <form>
             <fieldset>
                 <legend>Datos de lectura</legend>
                 <p>
-                    <label>Título del libro</label>
-                    <input type="text">
+                    <label for="titulo">Título del libro</label>
+                    <input type="text" required name="titulo" placeholder="ingresa el titulo...">
                 </p>
                 <p>
-                    <label>Autor del libro</label>
-                    <select>
+                    <label for="autor">Autor del libro</label>
+                    <select required name="autor">
                         <option value="StephanieGarber">Stephanie Garber</option>
-                        <option value="VictoriaResco">Victoria Resco</option>
+                        <option value="ColleenHoover">Colleen Hoover</option>
                         <option value="MarissaMeyer">Marissa Meyer</option>
                         <option value="NeilGaiman">Neil Gaiman</option>
                         <option value="DotHutchison">Dot Hutchison</option>
                     </select>
                 </p>
                 <p>
-                    <label>Culminación de la lectura</label>
-                    <input type="date">
+                    <label for="fecha_culminación">Culminación de la lectura</label>
+                    <input type="date" name="fecha_culminación">
                 </p>
                 <p>
-                    <label>Calificación</label>
-                    <select>
+                    <label for="calificacion">Calificación</label>
+                    <select name="calificacion">
                         <option value="1">1 &#9733</option>
                         <option value="2">2 &#9733</option>
                         <option value="3">3 &#9733</option>
@@ -55,16 +55,16 @@
                     </select>
                 </p>
                 <p>
-                    <label>Escribe tu reseña</label>
+                    <label for="resena">Escribe tu reseña</label>
                     <br>
-                    <textarea cols="60" rows="10">Danos tu opinión...</textarea>
+                    <textarea cols="60" rows="10" required placeholder="Danos tu opinión..." name="resena"></textarea>
                 </p>
             </fieldset>
             <div>
                 <label>¡Publica tu Reseña!</label>
                 <input type="submit">
             </div>
-          </form>
+        </form>
     </main>
     <footer>
         <div>
