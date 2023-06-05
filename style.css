@@ -25,6 +25,12 @@
     width: 15%;
     height: 7%;
 }
+.novedades {
+    width: 20%;
+    height: 150px;
+    border-radius: 3%;
+    border: 1px solid black;
+}
 table {
     width: 70%;
     border: 1px solid black;
