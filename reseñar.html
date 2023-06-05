@@ -13,8 +13,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html"> <img src="imagenes/logo.jpg" alt="HappyReads" class="logo"></a></li>
-                <li><a href="#">PERFIL</a></li>
+                <li><a href="index.html"> <img src="imagenes/logo.jpg" alt="HappyReads" title="HappyReads" class="logo"></a></li>
+                <li><a href="perfil.html">PERFIL</a></li>
                 <li><a href="#">EXPLORAR</a></li>
             </ul>
         </nav>
@@ -23,24 +23,23 @@
         <form>
             <fieldset>
                 <legend>Datos de lectura</legend>
-                <p>
+                <div>
                     <label for="titulo">Título del libro</label>
                     <input type="text" required name="titulo" placeholder="ingresa el titulo...">
-                </p>
-                <p>
+                </div>
+                <div>
                     <label for="autor">Autor del libro</label>
                     <select required name="autor">
-                        <option value="StephanieGarber">Stephanie Garber</option>
                         <option value="ColleenHoover">Colleen Hoover</option>
                         <option value="MarissaMeyer">Marissa Meyer</option>
                         <option value="NeilGaiman">Neil Gaiman</option>
                         <option value="DotHutchison">Dot Hutchison</option>
                     </select>
-                </p>
-                <p>
+                </div>
+                <div>
                     <label for="fecha_culminación">Culminación de la lectura</label>
                     <input type="date" name="fecha_culminación">
-                </p>
+                </div>
                 <fieldset>
                     <legend>¡Califícalo!</legend>
                     <input type="radio" name="calificacion" value="1">
@@ -54,11 +53,11 @@
                     <input type="radio" name="calificacion" value="5">
                     <label for="calificacion">5 &#9733</label>
                 </fieldset>
-                <p>
+                <div>
                     <label for="resena">Escribe tu reseña</label>
                     <br>
                     <textarea cols="60" rows="10" required placeholder="Danos tu opinión..." name="resena" required></textarea>
-                </p>
+                </div>
                 <div>
                     <label>¡Publica tu Reseña!</label>
                     <input type="submit">
