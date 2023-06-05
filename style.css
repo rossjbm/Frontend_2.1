@@ -1,0 +1,17 @@
+.librosInicio {
+    width: 10%;
+    height: 80%;
+}
+.libro {
+    width: 30%;
+    height: 100%;
+}
+.perfil {
+    width: 3%;
+    height: 3%;
+    border-radius: 50%;
+}
+.logo {
+    width: 15%;
+    height: 7%;
+}

@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Haz tu Reseña</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li>
-                    <a href="">INICIO</a>
-                </li>
-                <li>
-                    <a href="">PERFIL</a>
-                </li>
-                <li>
-                    <a href="">EXPLORAR</a>
-                </li>
+                <li><a href="index.html"> <img src="imagenes/logo.jpg" alt="HappyReads" class="logo"></a></li>
+                <li><a href="#">PERFIL</a></li>
+                <li><a href="#">EXPLORAR</a></li>
             </ul>
         </nav>
     </header>
@@ -44,41 +41,48 @@
                     <label for="fecha_culminación">Culminación de la lectura</label>
                     <input type="date" name="fecha_culminación">
                 </p>
-                <p>
-                    <label for="calificacion">Calificación</label>
-                    <select name="calificacion">
-                        <option value="1">1 &#9733</option>
-                        <option value="2">2 &#9733</option>
-                        <option value="3">3 &#9733</option>
-                        <option value="4">4 &#9733</option>
-                        <option value="5">5 &#9733</option>
-                    </select>
-                </p>
+                <fieldset>
+                    <legend>¡Califícalo!</legend>
+                    <input type="radio" name="calificacion" value="1">
+                    <label for="calificacion">1 &#9733</label>
+                    <input type="radio" name="calificacion" value="2">
+                    <label for="calificacion">2 &#9733</label>
+                    <input type="radio" name="calificacion" value="3">
+                    <label for="calificacion">3 &#9733</label>
+                    <input type="radio" name="calificacion" value="4">
+                    <label for="calificacion">4 &#9733</label>
+                    <input type="radio" name="calificacion" value="5">
+                    <label for="calificacion">5 &#9733</label>
+                </fieldset>
                 <p>
                     <label for="resena">Escribe tu reseña</label>
                     <br>
-                    <textarea cols="60" rows="10" required placeholder="Danos tu opinión..." name="resena"></textarea>
+                    <textarea cols="60" rows="10" required placeholder="Danos tu opinión..." name="resena" required></textarea>
                 </p>
+                <div>
+                    <label>¡Publica tu Reseña!</label>
+                    <input type="submit">
+                </div>
+                
             </fieldset>
-            <div>
-                <label>¡Publica tu Reseña!</label>
-                <input type="submit">
-            </div>
         </form>
     </main>
     <footer>
         <div>
             <p>Redes Sociales</p>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </nav>
         </div>
         <div>
-            <p>Copyrigth</p>
+            <p>Todos los derechos reservados &copy HappyReads 2030</p>
         </div>
         
     </footer>
 </body>
 </html>
+
